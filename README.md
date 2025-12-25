@@ -1,3 +1,5 @@
+# Part of the [CursorCult](https://github.com/CursorCult)
+
 # NoDeadCode
 
 ROT equals LIES. You're not a liar, are you?
