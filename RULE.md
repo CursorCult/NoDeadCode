@@ -1,18 +1,15 @@
 ---
-description: "Forbid dead, unused, or unreachable code"
+description: "You aren't gonna need it (YAGNI), avoid speculative features and complexity"
 alwaysApply: true
 ---
 
-# NoDeadCode Rule
+# YAGNI Rule (You Aren't Gonna Need It)
 
-A codebase under NoDeadCode must contain no dead, unused, or unreachable code.
+YAGNI means you do not build functionality until there is a concrete, current need. Speculative features create drag and hide real priorities.
 
-## Requirements
+## Guidelines
 
-- Code must be part of a live, reachable behavior surface and executed by automated tests. If a function or branch is not covered, it is dead: add test coverage or delete it.
-- Commented‑out code for history or “just in case” is forbidden. Version control is the archive.
-- Unused parameters, flags, feature toggles, legacy shims, and permanently‑off branches are forbidden unless they are actively used and publicly exercised.
-
-## Enforcement
-
-- CI must run automated tests with coverage and fail when uncovered code exists. Use any coverage tooling appropriate to the language.
+- Implement the smallest feature set that solves today's problem.
+- Do not add extensibility, hooks, or configuration without a live use case.
+- Delete unused code paths, flags, and scaffolding rather than carrying them forward.
+- Prefer reversible decisions and short feedback loops over "future-proof" designs.

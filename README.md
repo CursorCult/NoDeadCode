@@ -1,30 +1,34 @@
 # Part of the [CursorCult](https://github.com/CursorCult)
 
-# NoDeadCode
+# YAGNI
 
-ROT equals LIES. You're not a liar, are you?
+YAGNI: **You Aren't Gonna Need It**.
 
 **Install**
 
 ```sh
 pipx install cursorcult
-cursorcult link NoDeadCode
+cursorcult link YAGNI
 ```
 
 Rule file format reference: https://cursor.com/docs/context/rules#rulemd-file-format
 
 **When to use**
 
-- You want the codebase to mean what it says.
-- You’re tired of refactors haunted by unused paths.
-- You want every line to earn its keep.
+- You are tempted to build a feature for a hypothetical future.
+- You are adding flags or configs "just in case".
+- The roadmap is driving implementation more than user needs.
 
 **What it enforces**
 
-- No dead, unused, or unreachable code exists.
-- No commented‑out “maybe later” code.
-- Every line either matters or is removed.
+- Build only what is required for the current use case.
+- Avoid speculative abstractions and premature extensibility.
+- Remove unused code paths and options quickly.
 
 **Credits**
 
 - Developed by Will Wieselquist. Anyone can use it.
+
+**Origins**
+
+- YAGNI is a core principle of Extreme Programming, popularized by Ron Jeffries.
